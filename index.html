@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <title>Google Books API</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="titleHeader"> 
+            <p> GOOGLE BOOKS API</p>
+        </div>
+    </header>
+
+    
+
+    <div id="fundo">
+        <div class="search">
+            <div class="selectDiv">
+                <label for="userSelect">Selecione:</label>
+                <select name="userSelect" id="userSelect">
+                    <option value="" selected disabled>Procurar por..</option>
+                    <option value="intitle">Título</option>
+                    <option value="inauthor">Autor</option>
+                    <option value="inpublisher">Publicadora</option>
+                    <option value="subject">Lista do Volume</option>
+                    <option value="isbn">ISBN</option>
+                    <option value="lccn">LCCN</option>
+                    <option value="oclc">OCLC</option>
+                </select>
+            </div>
+
+        <div class="inputDiv">
+            <label for="userInput">Digite sua busca:</label>
+            <input type="text" id="userInput" required>
+        </div>
+
+            <div class="btn">
+                <button id="btnSearch" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="loadLivros()">Pesquisar</button>
+            </div>
+        </div>
+
+
+    <div id="containerBooks">
+        
+
+    </div>
+
+    </div>
+
+    <div class="load">
+        <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    
+    <footer>
+        <div class="cookies">
+            <p>Este site não utiliza cookies</p>
+        </div>
+    </footer>
+
+    
+
+
+    <script src="./main.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
